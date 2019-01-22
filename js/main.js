@@ -2,16 +2,27 @@ var ww, wh, renderer, scene, camera, planet, strokes;
 
 function init() {
 
+  var canvas = document.createElement('canvas');
+canvas.width = 500;
+canvas.height = 400;
+
+// Get the drawing context
+var ctx = canvas.getContext('2d');
+
+// Then you can do stuff, e.g.:
+ctx.fillStyle = '#f00';
+ctx.fillRect(20,10,80,50);
+
   ww = window.innerWidth;
   wh = window.innerHeight;
 
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(ww, wh);
-  renderer.setClearColor(0xe6ffff);
+  renderer.setClearColor(0x424242);
   renderer.setPixelRatio(window.devicePixelRatio ? window.devicePixelRatio : 1);
 
   scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0xe6ffff, 310, 550);
+  scene.fog = new THREE.Fog(0x424242, 310, 550);
 
   camera = new THREE.PerspectiveCamera(50, ww / wh, 20, 10000);
   camera.position.set(0, 0, 600);

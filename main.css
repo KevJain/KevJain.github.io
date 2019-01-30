@@ -9,3 +9,18 @@
    margin-left: -300px;
    margin-top: -200px;
 }
+
+.Border {
+   background-color: rgba(0, 0, 0, 0);
+   border-width: 50px;
+   border: solid;
+   border-color: white;
+   width: 550px;
+   height: 350px;
+   align-content:center;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   margin-left: -277px;
+   margin-top: -179px;
+}

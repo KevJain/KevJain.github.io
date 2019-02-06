@@ -23,4 +23,5 @@
    left: 50%;
    margin-left: -277px;
    margin-top: -179px;
+   pointer-events: none;
 }
